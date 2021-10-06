@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="username" required placeholder="username"/><br><br>
+        <input type="password" id="password" required placeholder="password"/><br>
+        <br>
+        <button onclick="validation();">Login</button>
+
+    </form>
+
+    <script type="text/javascript">
+        
+        function validation()
+        {
+            var username = 'admin';
+            var password = 'admin';
+            var userName = document.getElementById('username').value;
+            var passWord = document.getElementById('password').value;
+
+            if ((username == userName) && (password == passWord))
+            {
+                alert("Password Anda benar\nLogin berhasil");
+            }
+            else
+            {
+                alert(window.location='http://www.google.com');
+            }
+        }
+    </script>
+</body>
+</html>
